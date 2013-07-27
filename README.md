@@ -27,3 +27,23 @@ $di->setup('logger', function($di) {
 $app = $di->get('app');
 $app->run();
 ```
+
+## How do I return the same instance on subsequent calls?
+
+You don't.
+
+## Is it fast?
+
+Unfortunately not massively, although it's not *too* bad
+
+```
+> php benchmark.php
+10000000 Iterations
+Raw: 4.3745291233063
+Dimpled: 14.07391500473
+
+Overhead: 221.724113%
+```
+
+It's a little over two times slower than raw object initialisation.
+If you use it for only your service level objects it should be palatable.

@@ -17,6 +17,7 @@
         "php": ">= 5.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.x"
+        "phpunit/phpunit": "3.7.x",
+        "pimple/pimple": "1.0.x"
     }
 }

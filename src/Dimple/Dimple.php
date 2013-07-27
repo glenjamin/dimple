@@ -17,8 +17,8 @@ class Dimple {
         $this->values[$key] = $value;
     }
 
-    public function setup($key, $factory) {
-        $this->factories = $factory;
+    public function setup($key, \Closure $factory) {
+        $this->factories[$key] = $factory;
     }
 
     public function get($key, $default = 'ihopeyoudontwantopassthisvalue') {
