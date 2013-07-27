@@ -1,0 +1,15 @@
+<phpunit backupGlobals="false"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         strict="true"
+         bootstrap="tests/bootstrap.php">
+
+   <testsuites>
+     <testsuite name="Dimple">
+       <directory>tests/</directory>
+     </testsuite>
+   </testsuites>
+
+</phpunit>
