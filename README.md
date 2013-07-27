@@ -4,7 +4,7 @@ Dirt simple dependency injection container based loosely on Pimple
 
 ## Install
 
-    composer require dimple/dimple
+    composer require glenjamin/dimple
 
 ## Usage
 
